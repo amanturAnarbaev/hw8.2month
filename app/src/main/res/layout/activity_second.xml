@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/dark_grey"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_search_24" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_reorder_" />
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/destroy"
+        android:layout_width="50mm"
+        android:layout_height="65dp"
+        android:layout_marginBottom="35mm"
+        android:text="@string/destoy_everything"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="InOrMmUsage,MissingConstraints" />
+
+    <TextView
+        android:layout_width="30mm"
+        android:id="@+id/answer"
+        android:layout_height="70dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/destroy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="InOrMmUsage,MissingConstraints"
+        android:textColor="@color/dark_grey"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
